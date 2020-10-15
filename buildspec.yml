@@ -26,6 +26,6 @@ phases:
       - printf '{"ImageURI":"'${AWS_ACCOUNT_ID}'.dkr.ecr.'${AWS_REGION}'.amazonaws.com/nginx:latest"}' > imageDetail.json
 artifacts:
   files:
-    #- appspec.yml
-    #- taskdef.json
+    - appspec.yaml
+    - taskdef.json
     - imageDetail.json
