@@ -23,7 +23,7 @@ phases:
   post_build:
     commands:
       - docker push $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/nginx:latest
-      - printf '{"ImageURI":"'${AWS_ACCOUNT_ID}'.dkr.ecr.'${AWS_REGION}'.amazonaws.com/nginx:latest"}' > ../imageDetail.json
+      - printf '{"ImageURI":"'${AWS_ACCOUNT_ID}'.dkr.ecr.'${AWS_REGION}'.amazonaws.com/nginx:latest"}' > imageDetail.json
 artifacts:
   files:
     #- appspec.yml
