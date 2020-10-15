@@ -3,6 +3,7 @@ version: 0.2
 env:
   variables:
     AWS_REGION: "eu-central-1"
+    AWS_ACCOUNT_ID: "642506333333"
 
 phases:
   install:
