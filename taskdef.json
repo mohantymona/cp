@@ -15,8 +15,8 @@
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
-                    "awslogs-group": "awslogs-test",
-                    "awslogs-region": "us-west-2",
+                    "awslogs-group": "/test/cfn/metrics",
+                    "awslogs-region": "eu-central-1",
                     "awslogs-stream-prefix": "nginx"
                 }
             }
